@@ -9,10 +9,10 @@ def index():
 @app.route("/favorites")
 def favorites():
     favorites = [
-        {'name':'Blue', 'background': 'bg-primary'},
-        {'name':'Red', 'background': 'bg-danger'},
-        {'name':'Green', 'background': 'bg-success'},
-        {'name':'Orange', 'background': 'bg-warning'},
-        {'name':'Light Blue', 'background': 'bg-info'},
+        {'name':'Prince', 'background': 'bg-info'},
+        {'name':'James Brown', 'background': 'bg-info'},
+        {'name':'George Clinton', 'background': 'bg-info'},
+        {'name':'Stevie Wonder', 'background': 'bg-info'},
+        {'name':'The Beatles', 'background': 'bg-info'},
     ]
-    return render_template('favorites.html', colors=favorites)
+    return render_template('favorites.html', musicians=favorites)

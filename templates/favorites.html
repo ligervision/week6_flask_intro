@@ -50,10 +50,10 @@
   </nav>
 
   <div class="container">
-    <h1>These are my 5 favorite colors:</h1>
+    <h1>These are my 5 favorite musicians:</h1>
     <ul class="list-group">
-        {% for color in colors %}
-            <li class="list-group-item {{ color.background }}">{{ color.name }}</li>
+        {% for musician in musicians %}
+            <li class="list-group-item {{ musician.background }}">{{ musician.name }}</li>
         {% endfor %}
     </ul>
   </div>
